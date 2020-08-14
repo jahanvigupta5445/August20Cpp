@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//coding for printing array elements
+	//1.declaration of variables and array
+	int j,k;
+	int arr[5];
+	cout<<"enter the elements: \n";
+	// 2. using for loop to enter the values in array
+	for(j=0;j<=4;j++)
+	{
+	  cin>>arr[j];	
+	}
+	// 3.declaration of pointer
+	int *p,i;
+	//4.pointing out mathematical equation
+	p=arr;
+	cout<<"you entered: \n";
+	//5. using for loop to display the elements of array
+	for(i=1;i<6;i++)
+	{
+		cout<<*p<<endl;
+		p++;
+	}
+	return 0;
+}
