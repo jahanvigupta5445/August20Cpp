@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"-------------Hello welcome to the power station of democracy---------\n\n\n\n";
+	//asking for users age
+	int age;
+	cout<<"enter your age:\n";
+	cin>>age;
+	//using if else loop to check the eligibilty
+	if(age>=18)
+	{
+		cout<<"hey! you are eligible to vote\n\n";
+	}
+	else
+	{
+		cout<<"sorry try next time to vote\n\n";
+	}
+    cout<<"---------------------thank you for your response-------------------------";
+}
