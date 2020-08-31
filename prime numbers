@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int myprime(int x);
+int main()
+{
+	int x,y;
+	cout<<"enter the number: ";
+	cin>>x;
+	int flag=0;
+	for(y=2;y<=x/2;y++)
+	{
+		if(myprime(y)==1)
+		{
+			if(myprime(x-y)==1)
+			{
+				cout<<x<<"can be expressed as :"<<y<<"+"<<x-y<<endl;
+				flag =1;
+			}
+		}
+	}
+	if(flag==0)
+	{
+		cout<<x<<"cannot be expressed as sum of two prime numbers\n";
+	}
+ return 0;
+}
+int myprime(int x)
+{
+	int z,isprime=1;
+	for(z=2;z<=x/2;++z)
+	{
+		if(x%z==0)
+		{
+			isprime=0;
+		    break;
+		}
+	}
+	return isprime;
+}
